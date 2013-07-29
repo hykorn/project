@@ -3,6 +3,7 @@
 int ptrSwap2Nums();
 int sizeofAlternative();
 int ptrToPtr();
+void xorSwap(int *a, int *b);
 
 int main()
 {
@@ -18,7 +19,7 @@ int main()
   printf("ptr to num = %d\n", *ptr);  // value in addr
 
   //Using ptrs, swap 2 nums
-  //ptrSwap2Nums();
+  ptrSwap2Nums();
   sizeofAlternative();
   ptrToPtr();
 }
@@ -35,9 +36,10 @@ int ptrSwap2Nums()
   printf("a = %d\n", a); 
   printf("b = %d\n", b);
 
-  int *tmp = ptrA;
-  ptrA = &ptrB;
-  ptrB = &tmp;
+  //int *tmp = ptrA;
+  //ptrA = &ptrB;
+  //ptrB = &tmp;
+  xorSwap(ptrA, ptrB);
   
   printf("swapped a = %d\n", a); 
   printf("swapped b = %d\n", b); 
@@ -68,4 +70,11 @@ int ptrToPtr()
   // pptr   = addr of ptr
   // *pptr  = addr of num
   // **pptr = 10
+}
+
+void xorSwap(int *a, int *b)
+{
+  *a ^= *b;
+  *b ^= *a;
+  *a ^= *b;
 }
