@@ -1,0 +1,6 @@
+1005 john sales 5454
+1002 sama purch 4343
+1001 mani accts 2357
+1004 dine sales 1232
+1003 elan accts 4343
+1006 jack accts 4343

@@ -1,0 +1,7 @@
+package mymathautoload;
+
+sub f2;
+sub f3;
+sub f4;
+
+1;

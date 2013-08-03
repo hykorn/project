@@ -1,0 +1,6 @@
+hari 87 89 98
+john 65 87 89
+jack 99 87 85
+sonu 68 76 92
+japa 77 88 68
+kapa 87 92 61
